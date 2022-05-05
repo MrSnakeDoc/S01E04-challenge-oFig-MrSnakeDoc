@@ -1,0 +1,236 @@
+@import url(//fonts.googleapis.com/css?family=Raleway:400);
+@import url(//fonts.googleapis.com/css?family=Raleway:700);
+.container {
+  font-family: "Raleway";
+  background-color: white;
+  height: auto;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+header h1 {
+  background-color: #c80000;
+  display: block;
+  font-size: 2.2em;
+  padding-left: 25px;
+  color: white;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+header h1 span {
+  font-size: 0.45em;
+  padding-left: 10px;
+}
+.subtitle {
+  width: 100%;
+  background-color: #666;
+  text-align: center;
+  height: 40px;
+}
+h2 {
+  color: white;
+  padding-top: 14px;
+}
+h2 em {
+  font-style: italic;
+  font-size: 1.2em;
+}
+#boxes {
+  width: 80%;
+  margin: 25px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+}
+.flexbox {
+  color: black;
+  border: 1px solid #ccc;
+  margin: 10px;
+  flex: 0 1 300px;
+  height: 30rem;
+  padding: 5px 5px;
+  box-shadow: 0 0 15px 1px black;
+}
+.flexbox img {
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+.pline {
+  font-size: 15px;
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  margin: 0px 10px;
+}
+.img_box h3 {
+  font-weight: bold;
+  font-size: 23px;
+  padding: 15px 0px;
+  margin: 0px 10px;
+}
+.description {
+  font-size: 15px;
+  padding: 0px 0px 15px 0px;
+  margin: 0px 10px;
+}
+.panier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c80000;
+  color: #fff;
+  padding: 15px;
+}
+.panier a {
+  font-size: 0.8em;
+}
+strong {
+  font-weight: bold;
+  font-size: 18px;
+}
+.discount {
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+.button {
+  position: absolute;
+}
+.img_box {
+  position: relative;
+}
+.badge {
+  height: 60px;
+  width: 60px;
+  background-color: #666;
+  border: 5px solid lightgray;
+  border-radius: 50%;
+  position: absolute;
+  left: 220px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.badge p {
+  /* position: absolute;
+  top: 15px;
+  left: 5px; */
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+}
+footer p {
+  background-color: #666;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+.soldesbutton {
+  position: fixed;
+  background-color: #c80000;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  left: -0px;
+  top: calc(50% - 156px / 2);
+}
+.soldesbutton:hover {
+  cursor: pointer;
+}
+.soldesbutton p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.mask {
+  background-color: lightgray;
+  opacity: 0.8;
+  flex: 1 1 5em;
+  /* display: none; */
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.pop {
+  flex: 1 1 5em;
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 75vw;
+  height: 75vh;
+  top: 12.5%;
+  left: 12.5%;
+  background-color: white;
+  z-index: 5;
+  box-shadow: 0 0 15px 1px black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popup_title {
+  align-items: center;
+  text-align: center;
+  background-color: #c80000;
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+
+.popup_content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.popup_footer {
+  background-color: #666;
+  padding: 20px;
+}
+
+.buttonpop {
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-size: 0.8em;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.buttonpop:hover {
+  transform: scale(1.1);
+}
+
+.buttonpop--disabled {
+  background-color: #ccc;
+  color: #555;
+  cursor: none;
+}
+
+.buttonpop--disabled:hover {
+  transform: scale(1);
+}
